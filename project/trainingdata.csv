@@ -1,0 +1,19 @@
+high_chance low_chance high_angina normal_sugar high_restecg low_slope high_ca normal_thal normal_bp low_cholestrol low_thalach high_oldpeak,heartblock
+high_chance low_chance high_angina high_sugar high_restecg high_slope normal_ca low_thal high_bp normal_cholestrol normal_thalach low_oldpeak,heartfailure 
+low_chance low_chance normal_angina low_sugar high_restecg high_slope high_ca low_thal low_bp high_cholestrol low_thalach low_oldpeak,safe 
+low_chance low_chance high_angina low_sugar high_restecg low_slope high_ca high_thal low_bp low_cholestrol low_thalach low_oldpeak,stroke
+low_chance low_chance normal_angina low_sugar normal_restecg high_slope low_ca low_thal high_bp high_cholestrol normal_thalach low_oldpeak,high blood pressure
+high_chance low_chance low_angina high_sugar normal_restecg nomal_slope low_ca low_thal low_bp high_cholestrol low_thalach low_oldpeak,safe
+low_chance high_chance low_angina normal_sugar high_restecg high_slope high_ca low_thal low_bp normal_cholestrol low_thalach normal_oldpeak,Congestive Heart Failure
+low_chance high_chance low_angina high_sugar high_restecg high_slope high_ca normal_thal normal_bp normal_cholestrol normal_thalach low_oldpeak,Heart attack
+low_chance low_chance low_angina high_sugar low_restecg normal_slope high_ca low_thal low_bp high_cholestrol high_thalach high_oldpeak,heart failure
+low_chance low_chance normal_angina low_sugar high_restecg high_slope high_ca normal_thal normal_bp normal_cholestrol high_thalach high_oldpeak,heart block
+low_chance low_chance low_angina low_sugar low_restecg low_slope low_ca low_thal low_bp low_cholestrol low_thalach low_oldpeak,safe
+low_chance low_chance normal_angina normal_sugar normal_restecg normal_slope normal_ca normal_thal normal_bp normal_cholestrol normal_thalach normal_oldpeak,chance to failure
+low_chance low_chance normal_angina normal_sugar high_restecg high_slope high_ca high_thal normal_bp high_cholestrol low_thalach low_oldpeak,stroke
+low_chance low_chance high_angina low_sugar high_restecg high_slope high_ca high_thal low_bp low_cholestrol high_thalach high_oldpeak,Congenital heart disease
+high_chance high_chance low_angina high_sugar normal_restecg normal_slope high_ca low_thal low_bp high_cholestrol low_thalach low_oldpeak,you are safe
+low_chance low_chance high_angina normal_sugar low_restecg high_slope normal_ca low_thal high_bp normal_cholestrol low_thalach high_oldpeak,Congenital heart disease
+high_chance high_chance high_angina low_sugar normal_restecg high_slope normal_ca high_thal high_bp high_cholestrol low_thalach low_oldpeak,Congestive Heart Failure
+low_chance low_chance low_angina low_sugar high_restecg high_slope high_ca high_thal low_bp normal_cholestrol low_thalach high_oldpeak,Heart Block
+low_chance low_chance normal_angina low_sugar high_restecg high_slope high_ca low_thal high_bp high_cholestrol normal_thalach low_oldpeak, Heart Failure

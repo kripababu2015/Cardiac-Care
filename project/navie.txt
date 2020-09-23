@@ -1,0 +1,95 @@
+import nltk
+nltk.download('punkt')
+from nltk import NaiveBayesClassifier as nbc
+
+
+from nltk.tokenize import word_tokenize
+
+
+from itertools import chain
+
+
+import csv
+
+
+
+with open('trainingdata.csv','r') as csvinput:
+
+
+    reader=csv.reader(csvinput,delimiter=",")
+
+
+    rownum = 0 
+
+
+    training_data = []
+
+
+
+    for row in reader:
+
+
+        training_data.append (row)
+
+
+        rownum += 1
+
+
+
+vocabulary = set(chain(*[word_tokenize(i[0].lower()) for i in training_data]))
+
+
+
+feature_set = [({i:(i in word_tokenize(sentence.lower())) for i in vocabulary},tag) for sentence, tag in training_data]
+
+
+
+classifier = nbc.train(feature_set)
+
+
+
+with open('testdata.csv','r') as csvinput:
+
+
+    with open('data.csv', 'w') as csvoutput:
+
+
+        writer = csv.writer(csvoutput, lineterminator='\n')
+
+
+        reader1 = csv.reader(csvinput)
+
+
+
+        all = []
+
+
+        row = next(reader1)
+
+
+        
+
+
+
+        for row in reader1:
+
+
+            test_sentence = row[1]
+
+
+            featurized_test_sentence =  {i:(i in word_tokenize(test_sentence.lower())) for i in vocabulary}
+
+
+            print ("test_sent:",test_sentence)
+
+
+            print ("tag:",classifier.classify(featurized_test_sentence))
+
+
+            row.append(classifier.classify(featurized_test_sentence))
+
+
+            all.append(row)
+
+
+        writer.writerows(all)
